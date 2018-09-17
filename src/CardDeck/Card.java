@@ -8,7 +8,6 @@ public class Card {
 		Heart
 	}
 	public enum Value {
-		One,
 		Two,
 		Three,
 		Four,

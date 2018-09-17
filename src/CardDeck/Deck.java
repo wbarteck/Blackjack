@@ -8,7 +8,7 @@ public class Deck {
 	public Deck() {
 		cards = new ArrayList<Card>();
 		// Initialize Deck
-		for (int i = 0; i < 14; i++) {
+		for (int i = 0; i < 13; i++) {
 			for (int j = 0; j < 4; j++) {
 				Card c = new Card(Card.Suit.values()[j], Card.Value.values()[i]);
 				cards.add(c);
@@ -18,7 +18,7 @@ public class Deck {
 	}
 	
 	public void Shuffle() {
-		// Is this cheating? If I had to do it I would take a rand int from cards.size and pop that sucker in an empty arraylist
+		// Is this cheating? If I had to do it I would take a rand int from cards.size and pop that sucker in a new arraylist
 		Collections.shuffle(cards);
 	}
 	
