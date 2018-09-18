@@ -44,4 +44,14 @@ public class Hand {
 	public void addCard(Card c) {
 		hand.add(c);
 	}
+	
+	public String toString() {
+		String str = "Hand: ";
+		for (Card c : hand) {
+			str += c + " | ";
+		}
+		str = str.substring(0,str.length()-2)+"\n";
+		str += "Total points: " + this.handSum();
+		return str;
+	}
 }

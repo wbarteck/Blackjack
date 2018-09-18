@@ -1,9 +1,9 @@
-import CardDeck.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Deck d = new Deck();
+		GameManager gm = new GameManager();
+		gm.newGame();
 
 	}
 
